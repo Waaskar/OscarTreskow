@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container-fluid  d-flex justify-content-center">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae2.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae2.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae4.png"  height="55" width="70">
+        <img src="img/nae2.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+        <img src="img/nae.png"  height="55" width="70">
+        <img src="img/nae3.png"  height="55" width="95">
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="45" height="45">
+             <span class="text-danger fs-5 fw-bold">3KOWH MOTORS</span> 
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Prueba.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Catalogo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Equipo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Formulario.html">Formulario De Contacto</a>
+                </li>
+                </ul>  
+                <form class="d-flex">
+                <input class="form-control me-2" type="email" placeholder="Escribenos ¿Que Buscas?" aria-label="email">
+                <button class="btn btn-danger btn-danger-outline-success" type="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="row my-5">
+           
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <form action="" method="POST" class="formucolor">
+                <h3 class="display-5 text-warning text-center"> Formulario de Contacto </h3>
+
+                <div class="form-group">
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Ingrese su Nombre: " maxlength="10" id="nombre" name="nombre" class="form-control" required>
+                </div>
+
+                <div>
+                    <label for="">Rut</label>
+                    <input type="text" placeholder="Ingrese su Rol Tributario: " maxlength="20" id="rut" name="rut" class="form-control" required>
+                </div>
+
+
+                <div>
+                    <label for="">Genero</label>
+                    <input type="radio" class="form-check-input" name="rbt_genero" id="rbt_genero" value="M">
+                    <label for="" class="form-check-label">Masculino</label>
+                    <input type="radio" class="form-check-input" name="rbt_genero" id="rbt_genero" value="F">
+                    <label for="" class="form-check-label">Femenino</label>
+                </div>
+
+                <div>
+                    <label for="">Correo Electronico</label>
+                    <input type="email" placeholder="Ingrese su Correo Electronico:" maxlength="40" id="nombre" name="email" class="form-control" required>
+                </div>
+
+                <div>
+                    <label for="">Nro Telefónico</label>
+                    <input type="number" placeholder="Ingrese su Numero Telefónico: Ej: +569" maxlength="12" id="celular" name="celular" class="form-control" required> 
+                </div>
+
+                <div>
+                    <label for="">Asunto</label>
+                    <input type="text" placeholder="Ingrese el Asunto de su Consulta:" maxlength="500" id="text" name="text" class="form-control" required>
+                </div>
+
+                <div>
+                <label >Categoria</label >
+                    <select name="cargo" id="cargo" class="form-control" >
+                        <option value=""> -------------- </option>
+                        <option value="Desarrollador PHP">Vehiculos</option>
+                        <option value="Desarrollador PHP">Vestimenta</option>
+                        <option value="Desarrollador PHP">Accesorios</option>
+                    </select>
+
+                </div>
+
+                <br class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>                
+                    <input type="reset" class="btn btn-danger" value="Limpiar Controles">
+                </br>
+            </form>
+        </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <br>
+        <a href="https://www.youtube.com/watch?v=gJ7SljP_vuA" target="_blank"><img src="img/weno.png" width="35" height="35">/Ferrari GT3 458</a> 
+        </br>
+        
+        <a href="https://www.youtube.com/watch?v=gcq1iGu9cts" target="_blank"><img src="img/weno3.png" width="30" height="35">/Ferrari 488 GTR</a> 
+  
+        <a href="#-disabled"><img src="img/correo.png" width="35" height="35">/oscar.treskow@inacapmail.cl</a> 
+  
+        <a href="#-disabled"><img src="img/telefono.png" width="35" height="35">/(9) 81 81 6157 / (9) 46 90 1965</a> 
+  
+      </footer>
+    
+
+</body>
+</html>
